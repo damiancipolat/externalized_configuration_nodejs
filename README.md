@@ -11,6 +11,9 @@ In this scenario I use a S3 bucket to get the configuration when the server star
 
 Todo: add config change handler.
 
+There are two mock service loan and payments, and there are a config folder in each service with only the s3 bucket path.
+
+**Architecure diagram**
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/s3-external-config/doc/from-s3.png?raw=true" width="800px"/>
 
 **loanService.json**
