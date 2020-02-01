@@ -13,7 +13,7 @@ Todo: add config change handler.
 
 There are two mock service loan and payments, and there are a config folder in each service with only the s3 bucket path.
 
-### **Architecure diagram**
+### **Architecture diagram**
 Many instances of differents services fetching the config from the s3 files.
 
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/s3-external-config/doc/from-s3.png?raw=true" width="800px"/>
