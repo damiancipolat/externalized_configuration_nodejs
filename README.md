@@ -18,6 +18,8 @@ Many instances of differents services fetching the config from the s3 files.
 
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/s3-external-config/doc/from-s3.png?raw=true" width="800px"/>
 
+The services retrieves config from json files stored in a s3 bucket.
+
 **loanService.json**
 ```json
 {
