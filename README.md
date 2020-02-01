@@ -2,7 +2,7 @@
 Examples of how to manage external configurations in a microservice scenario, here are some ways on how to do it.
 I'm following the spec from this doc. https://microservices.io/patterns/externalized-configuration.html
 
-## There are differents situations of external configuration scenarios:
+### There are differents situations of external configuration scenarios:
 - From a S3 bucket.
 - From a git repository.
 
