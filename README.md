@@ -3,7 +3,7 @@ Examples of how to manage external configurations in a microservice scenario, he
 I'm following the spec from this doc. https://microservices.io/patterns/externalized-configuration.html
 
 ### There are differents situations of external configuration scenarios:
-- From a S3 bucket.
+- From a S3 bucket: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/s3-external-config
 - From a git repository.
 
 Benefits:
