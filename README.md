@@ -6,6 +6,9 @@ I'm following the spec from this doc. https://microservices.io/patterns/external
 - From a S3 bucket.
 - From a git repository.
 
+Benefits:
+- Hot configuration changes.
+
 ## From a S3 bucket.
 In this scenario I use a S3 bucket to get the configuration when the server start.
 
