@@ -1,0 +1,6 @@
+{
+  "external":{
+    "Bucket": "s3-files-dc",
+    "Key": "loanService.json"
+  }
+}
