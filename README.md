@@ -11,7 +11,7 @@ In this scenario I use a S3 bucket to get the configuration when the server star
 
 Todo: add config change handler.
 
-<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/s3-external-config/doc/from-s3.png?raw=true" width="150px" align="left" />
+<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/s3-external-config/doc/from-s3.png?raw=true" width="500px"/>
 
 **loanService.json**
 ```json
