@@ -15,7 +15,7 @@ const loadConfig = async (url)=>{
 
   if (!config)
     throw new Error('Bad config in git file');
-console.log('xxx',config);
+
   return config;
 
 }

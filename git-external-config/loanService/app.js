@@ -46,6 +46,9 @@ const bootStrap = async ()=>{
       port
     } = external;
 
+    if (!port)
+      throw new Error("Port is missing in config, server could'nt start.");
+
     //Start listen mode.
     app.listen(port, () => console.log('> Server start in port',port));
 
