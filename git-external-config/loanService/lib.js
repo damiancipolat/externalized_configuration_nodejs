@@ -11,13 +11,11 @@ const {
 //Read config from s3.
 const loadConfig = async (url)=>{
 
-  const res = await getFile(url);
-
-  const config = JSON.parse(res);
+  const config = await getFile(url);
 
   if (!config)
-    throw new Error('Bad config file');
-
+    throw new Error('Bad config in git file');
+console.log('xxx',config);
   return config;
 
 }
