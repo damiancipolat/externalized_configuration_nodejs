@@ -57,3 +57,8 @@ cd loanService
 npm install
 cd ..
 ```
+
+## From a configuration service.
+In this scenario there is a service that work as a exclusive api rest for configuration. I'm using https://www.mocky.io/ to mock an api-rest.
+
+<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/S3-service.png?raw=true" width="500px"/>
