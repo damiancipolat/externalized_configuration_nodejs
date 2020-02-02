@@ -9,6 +9,11 @@ I'm following the spec from this doc. https://microservices.io/patterns/external
 Benefits:
 - Hot configuration changes.
 
+
+## Change hot settings.
+Some interesting benefits of this patter is that, you can make changes in the config, without redeploy the services.
+In the projects there are a file ./configChange.js with a mechanism to detect changes in configuration and reset the services, to apply this new changes.
+
 ## From a S3 bucket.
 In this scenario I use a S3 bucket to get the configuration when the server start.
 
