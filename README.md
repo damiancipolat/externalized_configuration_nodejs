@@ -7,7 +7,7 @@ I'm following the spec from this doc. https://microservices.io/patterns/external
 - [From a Api-rest](#from-api)
 - [From a git repository](#from-git)
 
-Benefits:
+**Benefits:**
 - Hot configuration changes.
 
 
