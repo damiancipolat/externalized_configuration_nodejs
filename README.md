@@ -12,7 +12,7 @@ Benefits:
 
 ## Change hot settings.
 Some interesting benefits of this patter is that, you can make changes in the config, without redeploy the services.
-In the projects there are a file ./configChange.js with a mechanism to detect changes in configuration and reset the services, to apply this new changes.
+In the projects there are a file ./configChange.js with a mechanism to detect changes in configuration and reset the services, to apply this new changes. So is important to run the script using a process agent example **nodemon** or **pm2** to detect when the process finish and restart it.
 
 ## From a S3 bucket.
 In this scenario I use a S3 bucket to get the configuration when the server start.
