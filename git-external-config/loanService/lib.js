@@ -12,14 +12,13 @@ const {
 const loadConfig = async (url)=>{
 
   const res = await getFile(url);
-  console.log('xxxxxxxxxxxx',res);
-  /*
-  const config = await res.json();
+
+  const config = JSON.parse(res);
 
   if (!config)
     throw new Error('Bad config file');
 
-  return config;*/
+  return config;
 
 }
 
