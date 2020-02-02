@@ -9,6 +9,11 @@ I'm following the spec from this doc. https://microservices.io/patterns/external
 Benefits:
 - Hot configuration changes.
 
+
+## Change hot settings.
+Some interesting benefits of this patter is that, you can make changes in the config, without redeploy the services.
+In the projects there are a file ./configChange.js with a mechanism to detect changes in configuration and reset the services, to apply this new changes.
+
 ## From a S3 bucket.
 In this scenario I use a S3 bucket to get the configuration when the server start.
 
@@ -64,6 +69,19 @@ In this scenario there is a service that work as a exclusive api rest for config
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/S3-service.png?raw=true" width="500px"/>
 
 ### Install and run:
+```sh
+cd loanService
+npm install
+npm start
+```
+
+## From a GITHUB repository.
+In this scenario we extract the configurations from a github central configuration "file" so is very easy to make changes in this configurations. To make this the service use the GITHUB-API to can fetch the file, in the config/default.json there are the github credentials.
+
+<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/from-git.png?raw=true" width="500px"/>
+
+How to get the Github api token, go to this link: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token
+
 ```sh
 cd loanService
 npm install
