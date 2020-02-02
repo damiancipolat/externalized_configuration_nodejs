@@ -3,9 +3,9 @@ Examples of how to manage external configurations in a microservice scenario, he
 I'm following the spec from this doc. https://microservices.io/patterns/externalized-configuration.html
 
 ### There are differents situations of external configuration scenarios:
-- From a S3 bucket.(#from-s3)
-- From a Api-rest.(#from-api)
-- From a git repository.(#from-git)
+- From a S3 bucket. (#from-s3)
+- From a Api-rest. (#from-api)
+- From a git repository. (#from-git)
 
 Benefits:
 - Hot configuration changes.
