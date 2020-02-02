@@ -69,3 +69,16 @@ cd loanService
 npm install
 npm start
 ```
+
+## From a GITHUB repository.
+In this scenario we extract the configurations from a github central configuration "file" so is very easy to make changes in this configurations. To make this the service use the GITHUB-API to can fetch the file, in the config/default.json there are the github credentials.
+
+<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/from-git.png?raw=true" width="500px"/>
+
+How to get the Github api token, go to this link: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token
+
+```sh
+cd loanService
+npm install
+npm start
+```
