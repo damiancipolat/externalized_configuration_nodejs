@@ -15,6 +15,11 @@ const {
   setExternal
 } = require('./lib.js');
 
+//Load config changes observer.
+const {
+  changeObserver
+} = require('./configChange.js');
+
 //Start Express-js.
 const app    = express();
 const server = http.createServer(app);
@@ -36,6 +41,9 @@ const bootStrap = async ()=>{
 
     console.log('> Fetching configuration from Git ...');
     
+    //Start configuration changes handler.
+    changeObserver();
+
     //Read config.
     const external = await loadConfig(host);
     
