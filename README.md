@@ -1,4 +1,4 @@
-# Externalized configuration Pattern with Node.js
+# Externalized configuration Pattern in Node.js
 Examples of how to manage external configurations in a microservice scenario, here are some ways on how to do it.
 I'm following the spec from this doc. https://microservices.io/patterns/externalized-configuration.html
 
