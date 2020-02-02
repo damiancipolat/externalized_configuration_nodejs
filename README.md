@@ -3,8 +3,9 @@ Examples of how to manage external configurations in a microservice scenario, he
 I'm following the spec from this doc. https://microservices.io/patterns/externalized-configuration.html
 
 ### There are differents situations of external configuration scenarios:
-- From a S3 bucket: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/s3-external-config
-- From a git repository.
+- From a S3 bucket.(#from-s3)
+- From a Api-rest.(#from-api)
+- From a git repository.(#from-git)
 
 Benefits:
 - Hot configuration changes.
@@ -14,12 +15,11 @@ Benefits:
 Some interesting benefits of this patter is that, you can make changes in the config, without redeploy the services.
 In the projects there are a file ./configChange.js with a mechanism to detect changes in configuration and reset the services, to apply this new changes. So is important to run the script using a process agent example **nodemon** or **pm2** to detect when the process finish and restart it.
 
+<a name="from-s3"></a>
 ## From a S3 bucket.
-In this scenario I use a S3 bucket to get the configuration when the server start.
+In this scenario I use a S3 bucket to get the configuration when the server start. There are two mock service loan and payments, and there are a config folder in each service with only the s3 bucket path. 
 
-Todo: add config change handler.
-
-There are two mock service loan and payments, and there are a config folder in each service with only the s3 bucket path.
+Link: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/s3-external-config
 
 ### **Architecture diagram**
 Many instances of differents services fetching the config from the s3 files.
@@ -62,9 +62,11 @@ cd loanService
 npm install
 cd ..
 ```
-
+<a name="from-api"></a>
 ## From a configuration service.
 In this scenario there is a service that work as a exclusive api rest for configuration. I'm using https://www.mocky.io/ to mock an api-rest.
+
+Link: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/api-external-config
 
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/S3-service.png?raw=true" width="500px"/>
 
@@ -75,8 +77,11 @@ npm install
 npm start
 ```
 
+<a name="from-git"></a>
 ## From a GITHUB repository.
 In this scenario we extract the configurations from a github central configuration "file" so is very easy to make changes in this configurations. To make this the service use the GITHUB-API to can fetch the file, in the config/default.json there are the github credentials.
+
+Link: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/git-external-config
 
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/from-git.png?raw=true" width="500px"/>
 
