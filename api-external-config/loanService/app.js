@@ -14,6 +14,10 @@ const {
   setExternal
 } = require('./lib.js');
 
+const {
+ changeObserver
+}=require('./configChange.js');
+
 //Start Express-js.
 const app    = express();
 const server = http.createServer(app);
@@ -33,6 +37,7 @@ const bootStrap = async ()=>{
 
   try {
 
+    changeObserver();
     console.log('> Fetching configuration service ...');
     
     //Read config.

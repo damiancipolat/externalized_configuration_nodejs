@@ -15,6 +15,11 @@ const {
   setExternal
 } = require('./lib.js');
 
+//Load config changes observer.
+const {
+  changeObserver
+} = require('./configChange.js');
+
 //Start Express-js.
 const app    = express();
 const server = http.createServer(app);
@@ -33,6 +38,8 @@ const mockGET = (re,res) => {
 const bootStrap = async ()=>{
 
   try {
+
+    changeObserver();
 
     console.log('> Fetching config from s3...');
 
