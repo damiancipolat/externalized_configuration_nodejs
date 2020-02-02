@@ -81,6 +81,8 @@ npm start
 ## From a GITHUB repository.
 In this scenario we extract the configurations from a github central configuration "file" so is very easy to make changes in this configurations. To make this the service use the GITHUB-API to can fetch the file, in the config/default.json there are the github credentials.
 
+The service use this the file https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/git-external-config/loanService/config, only for a example purpose I'm using the same repo, but in a production scenario is better to use a **configuration repository** for the services.
+
 Link: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/git-external-config
 
 <img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/from-git.png?raw=true" width="500px"/>
