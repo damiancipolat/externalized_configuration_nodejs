@@ -6,6 +6,7 @@ I'm following the spec from this doc. https://microservices.io/patterns/external
 - [From a S3 bucket](#from-s3)
 - [From a Api-rest](#from-api)
 - [From a git repository](#from-git)
+- [From AWS parameter store](#from-ssm)
 
 **Benefits:**
 - Hot configuration changes.
@@ -94,3 +95,11 @@ cd loanService
 npm install
 npm start
 ```
+
+<a name="from-ssm"></a>
+## From a AWS Parameter Store.
+In this scenario we extract the configurations from a aws parameter store service
+
+Link: https://github.com/damiancipolat/externalized_configuration_nodejs/tree/master/aws-parameter-store-config/lambda
+
+<img src="https://github.com/damiancipolat/externalized_configuration_nodejs/blob/master/doc/ssm-aws.png?raw=true" width="500px"/>
