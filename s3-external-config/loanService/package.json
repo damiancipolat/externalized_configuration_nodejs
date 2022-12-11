@@ -11,6 +11,6 @@
   "dependencies": {
     "aws-sdk": "^2.610.0",
     "config": "^3.2.5",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
