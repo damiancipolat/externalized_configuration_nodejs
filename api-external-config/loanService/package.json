@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.2.5",
+    "config": "^3.3.8",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0"
   }
